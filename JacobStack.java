@@ -10,21 +10,21 @@ import java.util.ArrayList;  // Import the ArrayList class
 
 public class JacobStack {
   // Initializing the array list field
-  private ArrayList<Integer> _stackAsArray = new ArrayList<Integer>();
+  private ArrayList<Integer> stackAsArray = new ArrayList<Integer>();
 
   /**
    * This method adds user input to a stack.
    */
   public void push(Integer inputNumber) {
-    _stackAsArray.add(inputNumber);
+    stackAsArray.add(inputNumber);
   }
 
   /**
    * This method pops the item on top of the stack and returns it.
    */
   public Integer pop() {
-    int poppedNumber = this._stackAsArray.get(_stackAsArray.size() - 1);
-    _stackAsArray.remove(_stackAsArray.size() - 1);
+    int poppedNumber = this.stackAsArray.get(stackAsArray.size() - 1);
+    stackAsArray.remove(stackAsArray.size() - 1);
     return poppedNumber;
   }
 
@@ -33,8 +33,8 @@ public class JacobStack {
    */
   public String currentStack() {
     String currentValues = "Current ArrayList: ";
-    for (int counter = 0; counter < _stackAsArray.size(); counter++) {
-      currentValues = currentValues + _stackAsArray.get(counter) + ", ";
+    for (int counter = 0; counter < stackAsArray.size(); counter++) {
+      currentValues = currentValues + stackAsArray.get(counter) + ", ";
     }
     return currentValues;
   }

@@ -1,5 +1,5 @@
 /*
-* This program pushes a user inputed integer to a stack
+* This program pushes a user inputted integer to a stack
 *
 * @author  Jacob Bonner
 * @version 1.0
